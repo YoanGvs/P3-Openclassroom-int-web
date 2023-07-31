@@ -103,6 +103,9 @@ header {
     margin-top: -10px;
 }
 
+.infogroup__headline--subtitle{
+    height: 50px;
+}
 
 .infogroup__search--icon {
     width: 50px;
@@ -154,9 +157,12 @@ header {
     cursor: pointer; /* Affiche un pointeur de souris lorsqu'on survole */
 }
 
-/****** Filter **********/
 
-/* 
+/*************************/
+/****** Filter **********/
+/************************/
+
+
 .infogroup__filter {
     width: 760px;
     display: flex;
@@ -180,14 +186,39 @@ header {
 .infogroup__filter .fa-solid{
     width: 22px;
     height: 22px;
-    padding-top: 10px;
+    margin-top: 11px;
 }
 
 .infogroup__filter button:hover{
     background-color: #deebff;
 }
+/****infobar*******/
 
- */
+.infogroup__infobar-icon {
+    border-radius: 100%;
+    border: 1px solid grey;
+    height: 24px;
+    width: 24px;
+}
+
+.infogroup__infobar{
+    display: flex;
+    align-items: center;
+}
+
+.infogroup__infobar-icon i{
+    padding-left: 8px;
+    padding-top: 2px;
+}
+
+.infogroup__infobar-text{
+    padding-left: 15px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 
 
 /****** Hebergements And Populaires ***********/
