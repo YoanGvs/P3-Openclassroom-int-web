@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    /* box-shadow: 0 0 0 1px red inset; */
 }
 
 :root {
@@ -11,6 +12,11 @@
 
 .fa-solid {
     color: var(--main-color);
+}
+
+a{
+    text-decoration: none;
+    color: #000;
 }
 
 body {
@@ -36,6 +42,10 @@ body {
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 
 .card img {
     object-fit: cover;
@@ -158,9 +168,7 @@ header {
 }
 
 
-/*************************/
 /****** Filter **********/
-/************************/
 
 
 .infogroup__filter {
@@ -228,7 +236,6 @@ header {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 .hebergements-and-populaires section {
@@ -236,6 +243,7 @@ header {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
+    margin-bottom: 30px;
 }
 
 .hebergements-title{
@@ -345,8 +353,81 @@ header {
     margin-bottom: 5px;
 }
 
+/**************Activity******************/
+.activity{
+    padding: 30px;
+}
+
+.activity__card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px; /* padding around each card */
+
+}
+
+.activity__card a h3 {
+    color: black;
+    text-decoration: none;
+}
+
+.activity__tittle{
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
 
+.activity__card .card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activity__card-subtitle{
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+}
+
+
+/********** Footer *****************/
+footer {
+    display: flex;
+    justify-content: space-between; /* Ajustez l'espacement entre les éléments */
+    padding: 20px; /* Espacement intérieur autour du contenu */
+    background-color: #f9f9f9; /* Couleur de fond du pied de page */
+    margin-top: 35px;
+  }
+  
+  .footer__about,
+  .footer__hebergements,
+  .footer__assistance {
+    width: 30%; /* Réglez la largeur de chaque section */
+  }
+  
+  .footer__about-title h3,
+  .footer__hebergements-title h3,
+  .footer__assistance-title h3 {
+    font-size: 18px; /* Taille de police pour les titres */
+    margin-bottom: 15px; /* Espacement sous les titres */
+  }
+  
+  .footer__about-link a,
+  .footer__hebergements-link a,
+  .footer__assistance-link a {
+    text-decoration: none; /* Supprime les soulignements des liens */
+    color: #333; /* Couleur du texte des liens */
+    margin-bottom: 15px; /* Espacement entre les liens */
+    display: block; /* Fait que chaque lien soit sur une nouvelle ligne */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
