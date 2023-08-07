@@ -1,7 +1,6 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
-    /* box-shadow: 0 0 0 1px red inset; */
 }
 
 :root {
@@ -177,7 +176,9 @@ header {
 }
 
 
+/*************************/
 /****** Filter **********/
+/************************/
 
 
 .infogroup__filter {
@@ -245,6 +246,7 @@ header {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
 }
 
 .hebergements-and-populaires section {
