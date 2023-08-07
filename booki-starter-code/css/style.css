@@ -176,10 +176,12 @@ header {
 }
 
 
-/*************************/
 /****** Filter **********/
-/************************/
 
+.infogroup__filter-button{
+    display: flex;
+    justify-content: space-around;
+}
 
 .infogroup__filter {
     width: 760px;
@@ -476,6 +478,11 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activity__card {
+        
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
