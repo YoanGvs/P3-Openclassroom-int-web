@@ -1,12 +1,16 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    /* border: #f50000 1px inset; */
 }
 
 :root {
+    /* Colors */
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+
+    /* Text configuration  */
 }
 
 .fa-solid {
@@ -76,14 +80,12 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    max-width: 1440px;
     margin-bottom: 30px;
 }
 
 .header__logo {
-    padding-top: 30px;
-    width: 61px;
-    height: 19px; 
+    width: 3.8rem;
+    height: 1.2rem; 
 }
 
 .header__nav-item {
@@ -92,7 +94,7 @@ header {
     font-size: 16px;
     text-decoration: none;
     color: #000;
-    padding-top: 10px;
+    padding-top: 30px;
     border-top: 2px solid transparent;
     display: inline-block;
     transition: border-color 0.3s ease; /* Ajout d'une petite animation pour le changement de couleur */
@@ -107,26 +109,24 @@ header {
  
 /******* Info Group *****/
 
+.infogroup__headline-title{
+    margin-bottom: 0px;
+}
 .infogroup__search {
     display: flex;
     justify-content: space-between;
     align-items: center; /* Centre les éléments sur la ligne de base transversale */
-    width: 400px;
+    max-width: 400px;
     height: 50px; /* Définit la hauteur de la barre de recherche */
     border-radius: 10px;
     padding-top: 20px;
     box-sizing: border-box;
 }
-.infogroup__headline--subtitle{
-    margin-top: -10px;
-}
 
-.infogroup__headline--subtitle{
-    height: 50px;
-}
+
 
 .infogroup__search--icon {
-    width: 50px;
+    min-width: 50px;
     height: 50px;
     background-color: #F2F2F2;
     display: flex; /* Utiliser Flexbox pour centrer l'icône */
@@ -160,11 +160,11 @@ header {
     color: transparent; /* Rend le placeholder transparent lors de la mise au point */
 }
 
-.infogroup__search--button button{
+.infogroup__search-button button{
     background: none; /* Pas de couleur d'arrière-plan */
     border: none; /* Pas de bordure */
     height: 50px;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: bold;
     color: inherit; /* Utilise la couleur de l'élément parent */
     padding: 0 21px 0 21px; /* Pas de rembourrage */
@@ -178,19 +178,22 @@ header {
 
 /****** Filter **********/
 
-.infogroup__filter-button{
-    display: flex;
-    justify-content: space-around;
-}
+
 
 .infogroup__filter {
-    width: 760px;
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
     margin-top: 30px;
     align-items: center;
 }
 
+.infogroup__filter-button{
+    display:flex;
+    gap: 15px;
+    padding-left: 15px;
+    flex-wrap: wrap;
+
+}
 .infogroup__filter button{
     display: flex; 
     justify-content: center; 
@@ -203,10 +206,11 @@ header {
     font-weight: bold;
 }
 
+
 .infogroup__filter .fa-solid{
-    width: 22px;
-    height: 22px;
-    margin-top: 11px;
+    width: 1.37rem;
+    height: 1.37rem;
+    margin-top: 0.68rem;
 }
 
 .infogroup__filter button:hover{
@@ -234,16 +238,20 @@ header {
 .infogroup__infobar-text{
     padding-left: 15px;
     color: #000;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
 .infogroup__infobar{
-    padding-bottom: 30px;
+    padding: 1.9rem 0 1.9rem 0;
 }
 
+.infogroup__filter-button{
+    display: flex;
+    justify-content: space-between;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -394,7 +402,7 @@ header {
 
 .activity__card .card img {
     width: 100%;
-    height: 380px;
+    height: 124px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
@@ -479,13 +487,127 @@ footer {
         font-size: 13px;
     }
 
-    .activity__card {
-        
+    
+    .infogroup__filter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+
+    .infogroup__headline-title{
+        max-width: 80%;
+        font-size: 1.3rem;
     }
 
+    
+    .activity__card .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .infogroup__filter-button{
+        padding: 0px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+
+    .main-container{
+        padding: 0px;
+    }
+
+
+    /************Header****************/
+    header{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .header__nav-item {
+        display: inline-block;
+        margin: 0px 25px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #000;
+        padding-top: 30px;
+        border-bottom: 2px solid transparent;
+        display: inline-block;
+        transition: border-color 0.3s ease; /* Ajout d'une petite animation pour le changement de couleur */
+    }
+    
+    .header__nav-item:hover, 
+    .header__nav-item:focus, 
+    .header__nav-item:active {
+        border-top-color: var(--main-color); /* change la couleur de la bordure lors du survol, de la sélection ou du clic */
+        color: var(--main-color); /* change la couleur du texte lors du survol, de la sélection ou du clic */
+    }
+
+    header {
+        display: flex;
+        justify-content: center; /* Centre horizontalement les éléments */
+        align-items: center;     /* Centre verticalement les éléments */
+        width: 100%;
+    }
+    
+
+    .header__nav-item {
+        border-top: none; /* Supprime la bordure supérieure */
+        padding-bottom: 10px;
+        justify-content: space-around;
+    }
+    .header__nav-item:hover, 
+    .header__nav-item:focus, 
+    .header__nav-item:active {
+        border-bottom: 2px solid var(--main-color); /* Ajoute une bordure inférieure */
+    }
+/***************Info group***********************************/
+
+
+    .infogroup{
+        padding: 20px;
+    }
+
+
+
+/****************Hebergement*********************************/
+    .hebergements{
+        background-color: grey;
+        order: 3;
+        padding: 20px;
+        /* width: 100%; */
+        
+    }
+    .hebergements-card{
+        flex-direction: column;
+    }
+
+    .hebergements-card .card{
+        width: 335px;
+        height: 192px; 
+    }
+
+/***************Populaire ************************/    
+    .populaires{
+
+    }
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards .card{
+        width: 100%;
+    }
+
+/****************Activity************************/
+    .activity__card{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
+    
