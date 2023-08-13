@@ -24,7 +24,6 @@
             </nav>
         </header>
         <main>
-<!---------------------------------------------------------------------------------->            
             <section class="infogroup">
 
                 <div class="infogroup__headline">
@@ -36,43 +35,38 @@
                     </div>
                 </div>
 
-                <div class="infogroup__search">
-                    <div class="infogroup__search--icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <div class="infogroup__search--input">
-                        <input type="search" placeholder="Marseille , France">
-                    </div>
-                    <div class="infogroup__search-button">
-                        <button>Rechercher</button>
-                    </div>
-                </div>
+                <form class="recherche-bar" method="get" action="#">
+                    <label class="recherche-location-dot" for="recherche"><i class="fa-solid fa-location-dot"></i></label>
+                    <input class="recherche-box" type="text" name="recherche" id="recherche" placeholder="Marseille, France">
+                    <button class="recherche-button" type="submit">
+                        <span class="recherche-button-text">Rechercher</span>
+                        <i class="fa-solid fa-magnifying-glass recherche-button-loupe"></i>
+                    </button>
+            </form>
 
                 <div class="infogroup__filter">
-
-                    <!-- infogroup__filter-tittle -->
 
                     <div class="infogroup__filter-tittle">
                         <h3>Filtres</h3>
                     </div>
-                    
-                    
-                    
-
-                    <!-- infogroup__filter-button -->
-                    
+                
                     <div class="infogroup__filter-button">
+
                         <button>
-                            <i class="fa-solid fa-money-bill-wave"></i>Economique
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <h4>Economique</h4>
                         </button >
                         <button >
-                            <i class="fa-solid fa-person"></i>Familial
+                            <i class="fa-solid fa-person"></i>
+                            <h4>Familial</h4>
                         </button>
                         <button >
-                            <i class="fa-solid fa-heart"></i>Romantique
+                            <i class="fa-solid fa-heart"></i>
+                            <h4>Romantique</h4>
                         </button>
                         <button>                            
-                            <i class="fa-solid fa-fire"></i>Nos pépites
+                            <i class="fa-solid fa-fire"></i>
+                            <h4>Nos pépites</h4>
                         </button>
                     </div>                         
                 </div>
@@ -86,15 +80,14 @@
                     </div>
                 </div>
             </section>
-<!---------------------------------------------------------------------------------->
             <section class="hebergements-and-populaires">
                 <section class="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-card">
-                        <a href="" class="card">
-                            <article >
+                        <a href=""class="card">
+                            <article  >
                             <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                             <div class="card-content">
                                 <div class="card-txt">
@@ -308,6 +301,7 @@
                 </div>
             </section>
         </main>
+
         <footer>
             <div class="footer__about">
               <div class="footer__about-title">
