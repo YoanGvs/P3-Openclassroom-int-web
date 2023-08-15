@@ -85,7 +85,7 @@ header {
 
 .header-logo {
     height: 19px;
-    padding: 30px;
+    padding: 50px;
 }
 
 .header-nav {
@@ -548,7 +548,7 @@ footer {
         flex-direction: column;
         height: 115px;
         align-items: center;
-        margin: 0px 0px 30px 0px;    }
+        margin: 0px 0px 60px 0px;    }
 
     .header-logo {
        padding-left: 30px; 
