@@ -627,6 +627,7 @@ footer {
     .filtres-button {
         width: 34%;
         margin-top: 20px;
+        min-width: 120px;
     }
 
     .filtres-button-text {
